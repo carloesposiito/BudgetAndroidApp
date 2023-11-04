@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Budget.Views.EditMovementPage"
+             BackgroundColor="#1C1C1C">
+    <ScrollView Orientation="Vertical">
+        <StackLayout Orientation="Vertical">
+
+            <!-- Title -->
+            <Label x:Name="Label_Title" Text="Modifica movimento" HorizontalTextAlignment="Center" TextColor="White" FontSize="30" Margin="20,10,20,10"/>
+
+            <!-- Insert section -->
+            <StackLayout x:Name="StackLayout_InsertMovement" Orientation="Vertical" Margin="20,10,20,10">
+                <Entry x:Name="MovementDescription" Placeholder="Inserisci descrizione" PlaceholderColor="White" TextColor="White" Keyboard="Text"/>
+                <Entry x:Name="MovementValue" Placeholder="Inserisci importo"  PlaceholderColor="White" TextColor="White" Keyboard="Numeric"/>
+                <DatePicker x:Name="MovementDate" TextColor="White"/>
+                <StackLayout Orientation="Horizontal">
+                    <RadioButton x:Name="RB_In" Content="+" TextColor="White"/>
+                    <RadioButton x:Name="RB_Out" Content="-" TextColor="White"/>
+                    <RadioButton x:Name="RB_Draft" Content="/" TextColor="White"/>
+                </StackLayout>
+                <Picker x:Name="Picker_Wallets" Title="Seleziona conto" SelectedIndex="0" TextColor="White" TitleColor="White"/>
+                <Frame CornerRadius="20" Padding="0" Margin="0,25,0,15">
+                    <Button x:Name="Button_Edit" Text="Modifica" Clicked="EditMovement"/>
+                </Frame>
+                <Frame x:Name="Button_Confirm" CornerRadius="20" Padding="0" Margin="0,0,0,15">
+                    <Button Text="Conferma" Clicked="ConfirmMovement"/>
+                </Frame>
+                <Frame x:Name="Button_Delete" CornerRadius="20" Padding="0">
+                    <Button Text="Elimina" BackgroundColor="Red" Clicked="DeleteMovement"/>
+                </Frame>
+            </StackLayout>
+
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

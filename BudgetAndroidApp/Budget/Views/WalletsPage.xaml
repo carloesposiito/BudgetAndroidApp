@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Budget.Views.WalletsPage"
+             BackgroundColor="#1C1C1C">
+    <ScrollView Orientation="Vertical">
+        <StackLayout Orientation="Vertical">
+
+            <!-- Title -->
+            <Label x:Name="Label_Title" Text="I tuoi conti" HorizontalTextAlignment="Center" TextColor="White" FontSize="30" Margin="20,10,20,10"/>
+
+            <!-- Button show insert section -->
+            <Frame CornerRadius="20" Padding="0" Margin="20,20,20,10">
+                <Button x:Name="Button_InsertWallet" Text="Crea conto" Clicked="OpenCreateWallet"/>
+            </Frame>
+            
+            <!-- Wallet list -->
+            <StackLayout x:Name="StackLayout_Content" Orientation="Vertical" Margin="25,0"/>
+
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Budget.Views.EditWalletPage"
+             BackgroundColor="#1C1C1C">
+    <ScrollView Orientation="Vertical">
+        <StackLayout Orientation="Vertical">
+
+            <!-- Title -->
+            <Label x:Name="Label_Title" HorizontalTextAlignment="Center" TextColor="White" FontSize="30" Margin="20,10,20,10"/>
+
+            <!-- Insert section -->
+            <StackLayout x:Name="StackLayout_InsertWallet" Orientation="Vertical" Margin="20,10,20,10">
+                <Entry x:Name="WalletName" Placeholder="Inserisci nome"  PlaceholderColor="White" TextColor="White" Keyboard="Text"/>
+                <Entry x:Name="WalletAmount" Placeholder="Inserisci saldo" PlaceholderColor="White" TextColor="White" Keyboard="Numeric"/>
+                <Frame CornerRadius="20" Padding="0" Margin="0,15,0,15">
+                    <Button x:Name="Button_Edit" Text="Modifica" Clicked="EditWallet"/>
+                </Frame>
+                <Frame x:Name="Button_Delete" CornerRadius="20" Padding="0">
+                    <Button Text="Elimina" BackgroundColor="Red" Clicked="DeleteWallet"/>
+                </Frame>
+            </StackLayout>
+
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

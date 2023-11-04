@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+
+	<style name="MainTheme" parent="MainTheme.Base">
+
+		<!-- Set theme colors from https://aka.ms/material-colors -->
+
+		<!-- colorPrimary is used for the default action bar background -->
+		<item name="colorPrimary">#1c1c1c</item>
+		<!-- colorPrimaryDark is used for the status bar -->
+		<item name="colorPrimaryDark">#1c1c1c</item>
+		<!-- colorAccent is used as the default value for colorControlActivated which is used to tint widgets -->
+		<item name="colorAccent">#FFFFFF</item>
+		<!--Default value for loading backgound-->
+		<item name="android:windowBackground">#1c1c1c</item>
+
+	</style>
+	
+</resources>

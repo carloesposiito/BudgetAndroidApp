@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Budget.Views.AboutPage"
+             BackgroundColor="#1C1C1C">
+    <ScrollView Orientation="Vertical">
+        <StackLayout x:Name="StackLayout_About" Orientation="Vertical" Margin="20,10,20,10">
+
+            <!-- Title -->
+            <Label x:Name="Label_Title" Text="Informazioni" HorizontalTextAlignment="Center" TextColor="White" FontSize="30" Margin="20,10,20,20"/>
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                
+                <Image x:Name="Image_Photo" HeightRequest="300" HorizontalOptions="Center" WidthRequest="300"/>
+                
+            </Grid>
+
+            <Label FontAttributes="Bold" FontSize="23" HeightRequest="25" HorizontalTextAlignment="Center" Margin="0, 25, 0, 10" x:Name="Name" Text="Carlo Esposito" TextColor="White"/>
+            <Label FontAttributes="Italic" FontSize="18" HeightRequest="25" HorizontalTextAlignment="Center" Margin="0,1" x:Name="Mail" Text="Email" TextColor="White" TextDecorations="Underline"/>
+            <Label FontAttributes="Italic" FontSize="18" HeightRequest="25" HorizontalTextAlignment="Center" Margin="0,1" x:Name="GitHub" Text="GitHub" TextColor="White" TextDecorations="Underline"/>
+
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

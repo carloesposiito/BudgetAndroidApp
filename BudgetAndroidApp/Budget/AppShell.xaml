@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Shell xmlns="http://xamarin.com/schemas/2014/forms"
+       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+       xmlns:local="clr-namespace:Budget.Views"
+       Title="Template"
+       x:Class="Budget.AppShell">
+    
+    <Shell.Resources>
+        <ResourceDictionary>
+            
+            <!-- Base style -->
+            <Style x:Key="BaseStyle" TargetType="Element">
+                <Setter Property="Shell.BackgroundColor" Value="{StaticResource Black}" />
+                <Setter Property="Shell.ForegroundColor" Value="White" />
+                <Setter Property="Shell.TitleColor" Value="White" />
+                <Setter Property="Shell.DisabledColor" Value="White" />
+                <Setter Property="Shell.UnselectedColor" Value="White" />
+                <Setter Property="Shell.TabBarBackgroundColor" Value="{StaticResource Black}" />
+                <Setter Property="Shell.TabBarForegroundColor" Value="White"/>
+                <Setter Property="Shell.TabBarUnselectedColor" Value="White"/>
+                <Setter Property="Shell.TabBarTitleColor" Value="White"/>
+            </Style>
+            
+            <Style TargetType="TabBar" BasedOn="{StaticResource BaseStyle}" />
+            
+            <Style TargetType="FlyoutItem" BasedOn="{StaticResource BaseStyle}" />
+        
+        </ResourceDictionary>
+    </Shell.Resources>
+
+    <TabBar>
+        <ShellContent Title="Movimenti" Icon="icon_movements.png" Route="HomePage" ContentTemplate="{DataTemplate local:HomePage}" />
+        <ShellContent Title="Conti" Icon="icon_wallet.png" ContentTemplate="{DataTemplate local:WalletsPage}" />
+        <ShellContent Title="Impostazioni" Icon="icon_settings.png" ContentTemplate="{DataTemplate local:SettingPage}" />
+    </TabBar>
+
+    <!-- Shell.Current.GoToAsync("//LoginPage") -->
+
+</Shell>

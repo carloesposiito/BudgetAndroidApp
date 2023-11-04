@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Budget.App">
+    <Application.Resources>
+
+        <!-- My colors -->
+        <Color x:Key="Black">#1C1C1C</Color>
+
+        <!-- Default button style -->
+        <Style TargetType="Button">
+            <Setter Property="TextColor" Value="White"/>
+            <Setter Property="BackgroundColor" Value="DimGray"/>
+        </Style>
+
+    </Application.Resources>
+</Application>
