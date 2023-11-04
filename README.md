@@ -18,13 +18,13 @@ A movement has a description, an amount, a date and a type, which can be incomin
 The total of income and outgoing is calculated at the end of the table and added to the initial balance. Draft movements are ignored during calculation.
 
 
-![](https://github.com/carloesposiito/Budget-Android-App/blob/main/IMGs/Movements%20page_.png)
+![](https://github.com/carloesposiito/BudgetAndroidApp/blob/main/Screenshots/Movements%20page_.png)
 
 
 The button present on each movement opens a new page where it is possible to edit the movement, confirm it on the starting balance or cancel it.
 
 
-![](https://github.com/carloesposiito/Budget-Android-App/blob/main/IMGs/Edit%20movement%20page_.png)
+![](https://github.com/carloesposiito/BudgetAndroidApp/blob/main/Screenshots/Edit%20movement%20page_.png)
 
 
 # Wallets page
@@ -33,13 +33,13 @@ The button present on each movement opens a new page where it is possible to edi
 Wallets can be created clicking the button in the wallets page.
 
 
-![](https://github.com/carloesposiito/Budget-Android-App/blob/main/IMGs/Wallets%20page_.png)
+![](https://github.com/carloesposiito/BudgetAndroidApp/blob/main/Screenshots/Wallets%20page_.png)
 
 
 For each wallet displayed there is a button that opens a new page where they can be modified or deleted.
 
 
-![](https://github.com/carloesposiito/Budget-Android-App/blob/main/IMGs/Edit%20wallet%20page_.png)
+![](https://github.com/carloesposiito/BudgetAndroidApp/blob/main/Screenshots/Edit%20wallet%20page_.png)
 
 
 # Settings page
@@ -50,5 +50,5 @@ Wallets can be made visible or not in the movements page clicking the button nea
 Info button opens a new page with contacts of Budget developer.
 
 
-![](https://github.com/carloesposiito/Budget-Android-App/blob/main/IMGs/Settings%20page_.png)
+![](https://github.com/carloesposiito/BudgetAndroidApp/blob/main/Screenshots/Settings%20page_.png)
 
